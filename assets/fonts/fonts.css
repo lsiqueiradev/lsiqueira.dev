@@ -1,10 +1,12 @@
 @font-face {
   font-family: Eina;
-  src: url(./eina-regular.woff2) format("woff2")
+  src: url(./eina-regular.woff2) format("woff2");
+  font-display: swap;
 }
 
 @font-face {
   font-family: Prophet;
   src: url(./prophet-bold.woff2) format("woff2");
-  font-weight: 700
+  font-weight: 700;
+  font-display: swap;
 }
