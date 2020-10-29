@@ -17,6 +17,11 @@ export default createGlobalStyle`
   #__next{
     height: 100%;
   }
+  html,
+  body{
+    position: relative;
+    overflow-x:hidden;
+  }
 
   body{
     -webkit-font-smoothing: antialiased;
@@ -32,9 +37,8 @@ export default createGlobalStyle`
 
   @media (max-width: 768px){
     body{
-      padding-left: 0;
-      padding-right: 0;
-      padding-bottom: 0;
+      padding: 0;
+      border:none;
     }
   }
 

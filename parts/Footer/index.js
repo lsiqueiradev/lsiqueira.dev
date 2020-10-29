@@ -23,9 +23,9 @@ export default function Footer(){
             <div className="text">Or fill in our <Link href="/contact"><a title="Send me a contact">project form</a></Link></div>
           </div>
           <div className="social-media">
-            <a href="https://www.instagram.com/lucassiqueiram/" target="_BLANK" rel="noopener noreferrer" title="Facebook" ><FaInstagram /></a>
-            <a href="https://www.linkedin.com/in/lsiqueiradev/" target="_BLANK" rel="noopener noreferrer" title="Linkedin" ><FaLinkedin /></a>
-            <a href="https://www.github.com/lsiqueiradev/" target="_BLANK" rel="noopener noreferrer" title="Github" ><FaGithub /></a>
+            <a href="https://www.instagram.com/lucassiqueiram/" target="_BLANK" title="Instagram" ><FaInstagram /></a>
+            <a href="https://www.linkedin.com/in/lsiqueiradev/" target="_BLANK" title="Linkedin" ><FaLinkedin /></a>
+            <a href="https://www.github.com/lsiqueiradev/" target="_BLANK" title="Github" ><FaGithub /></a>
           </div>
 
         </footer>
