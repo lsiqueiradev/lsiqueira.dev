@@ -110,13 +110,34 @@
     </div>
   </div>
 
+  <!-- Script Theme
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <script>
     function toggleTheme() {
-      let html = document.getElementsByTagName( 'html' )[0];
+      let html = document.getElementsByTagName('html')[0];
       let btn = document.getElementsByClassName('toggle-dark')[0];
       html.classList.toggle("dark-mode");
       btn.classList.toggle("sun");
+      if(html.classList.contains("dark-mode")){
+        localStorage.setItem('theme', html.classList.contains("dark-mode"));
+      } else {
+        localStorage.removeItem('theme');
+      }
     }
+
+    window.addEventListener("load", function(event) {
+      let dark_status = localStorage.getItem('theme');
+      let html = document.getElementsByTagName('html')[0];
+      let btn = document.getElementsByClassName('toggle-dark')[0];
+
+      if(dark_status){
+        html.classList.add("dark-mode");
+        btn.classList.add("sun");
+      } else {
+        html.classList.remove("dark-mode");
+        btn.classList.remove("sun");
+      }
+    });
   </script>
 
 <!-- End Document
